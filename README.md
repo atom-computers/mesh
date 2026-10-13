@@ -40,6 +40,13 @@ Mesh supports all the usual cloud primitives:
 - Scheduler
 - IAM
 
+
+### Mesh vs others
+| Mesh | Supabase | AWS/GCP/Azure |
+| ---- | -------- | --- |
+| GraphQL-first with fine-grained IAM | SQL on tables with access control | Vendor lock-in |
+
+
 Example (Queue + Cron + IAM):
 
 ```typescript
