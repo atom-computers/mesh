@@ -46,6 +46,7 @@ Mesh supports all the usual cloud primitives:
 | ---- | -------- | --- |
 | GraphQL-first with fine-grained IAM | SQL on tables with access control | Vendor lock-in |
 
+Mesh is designed to feel familiar to the ease of CDK, without tying yourself to a cloud vendor.
 
 Example (Queue + Cron + IAM):
 
@@ -83,3 +84,9 @@ const onTask = (task: Task) => {
 Tasks.addTrigger(onTask)
 ```
 
+Simple Terraform/CDK-like CLI
+```sh
+$ mesh synth
+$ mesh plan
+$ mesh run
+```
