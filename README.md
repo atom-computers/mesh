@@ -5,7 +5,8 @@ Open-source cloud framework that replaces AWS/GCP/Azure with a stack you can run
 ```typescript
 // Define a PostgreSQL table
 const products = table('Products', Product, {
-  id: index()
+  id: primary(),
+  embedding: vector(384)
 })
 
 // Define an IAM role
